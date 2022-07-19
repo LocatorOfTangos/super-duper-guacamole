@@ -1,1 +1,1 @@
-print("hi")
+fprintf("hi\n");
