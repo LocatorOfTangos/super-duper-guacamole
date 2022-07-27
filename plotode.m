@@ -13,6 +13,7 @@ function plotode(n, TA, TS) % n denotes the number of years to plot.
     % Plot3 to visualise it
     [t, traj] = ode45(@ode, [0 n], [TA, TS]);
     plot3(traj(:,1),traj(:,2),t,'.','markersize',1)
+    
     fprintf("Final temperature vector: [Atmospheric, Surface] = " + ...
         "[%.2fK, %.2fK] =  [%.2fC, %.2fC].\n", ...
         traj(end,1), traj(end,2), traj(end,1)-273.15, traj(end,2)-273.15);

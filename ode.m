@@ -6,7 +6,7 @@ function dTdt = ode(t, T)
 
     % Specific heat conversion factor for the surface of earth.
     RS=2.8; % Educated guess
-    
+
     gamA=0.23; % Proportion of solar radation absorbed by Atmo.
     gamS=0.47; % Proportion of solar radation absorbed by Surface.
     sigma=5.6703*10^(-8); % Stefan Boltzmann constant
