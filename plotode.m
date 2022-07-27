@@ -1,6 +1,5 @@
-function plotode(n, TA, TS) % n denotes the number of time units to plot
-% x, y, z denote the point's starting position
-% Try (n, x, y, z) = (100000, 2, 0, 0)
+function plotode(n, TA, TS) % n denotes the number of years to plot.
+    % try (10, 0, 0)
 
     % Add title, label axes
     hold on
@@ -17,3 +16,6 @@ function plotode(n, TA, TS) % n denotes the number of time units to plot
     fprintf("Final temperature vector: [Atmospheric, Surface] = " + ...
         "[%.2fK, %.2fK] =  [%.2fC, %.2fC].\n", ...
         traj(end,1), traj(end,2), traj(end,1)-273.15, traj(end,2)-273.15);
+
+    % Don't forget, this is a 3d plot! select the rotation tool in the
+    % figure and drag around to visualise all axes.
